@@ -2,10 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restock</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
-    <!-- HERO SECTION -->
+    <header class="site-header">
+        <a class="site-header__brand" href="#home">RESTOCK</a>
+
+        <nav class="site-header__nav" aria-label="Primary">
+            <a class="is-active" href="#home">HOME</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#benefits">BENEFITS</a>
+            <a href="#testimonials">TESTIMONIALS</a>
+            <a href="#questions">QUESTIONS</a>
+            <a href="#tutorial">TUTORIAL</a>
+            <a href="#plans">PLANS</a>
+            <a href="#download">DOWNLOAD</a>
+        </nav>
+
+        <div class="site-header__actions">
+            <button class="site-header__lang" type="button" aria-label="Change language">
+                <span aria-hidden="true">☼</span>
+                EN
+                <span aria-hidden="true">⌄</span>
+            </button>
+            <button class="site-header__login" type="button">Login</button>
+            <button class="btn btn--primary btn--compact" type="button">Get Started</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero__inner">
+                <div class="hero__copy">
+                    <span class="hero__eyebrow">● SMART INVENTORY SYSTEM</span>
+                    <h1>Smart <span>Inventory</span> for Restaurants &amp; Retail</h1>
+                    <p>Real-time inventory tracking for modern businesses.</p>
+
+                    <div class="hero__actions">
+                        <button class="btn btn--primary" type="button">Get Started <span aria-hidden="true">↗</span></button>
+                        <button class="btn btn--ghost" type="button">Watch Demo</button>
+                    </div>
+                </div>
+
+                <div class="hero__visual" aria-hidden="true">
+                    <div class="dashboard-card">
+                        <div class="dashboard-card__top">
+                            <div class="device-status">
+                                <span class="device-status__icon">📈</span>
+                                <div>
+                                    <p>Smart Device Connected</p>
+                                    <h2>Flour Supply — Downtown Branch</h2>
+                                </div>
+                            </div>
+
+                            <div class="stock-metric">
+                                <strong>2.48 kg</strong>
+                                <span>Current Stock</span>
+                            </div>
+                        </div>
+
+                        <div class="product-frame">
+                            <img class="product-frame__image" src="assets/images/hero.png" alt="Product preview">
+                        </div>
+
+                        <div class="dashboard-card__stats">
+                            <article>
+                                <span>TEMP</span>
+                                <strong>22.4°C</strong>
+                            </article>
+                            <article>
+                                <span>HUMIDITY</span>
+                                <strong>42%</strong>
+                            </article>
+                            <article>
+                                <span>STATUS</span>
+                                <strong>Stable</strong>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!-- TEAM MEMBERS SECTION -->
 
@@ -27,5 +106,6 @@
     <footer>
 
     </footer>
+    </main>
 </body>
 </html>
