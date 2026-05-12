@@ -441,6 +441,96 @@ button,
     overflow: hidden;
 }
 
+.faq {
+    padding: 5.5rem 1.2rem 6rem;
+    background: #eef0f2;
+    color: #121a2c;
+}
+
+.faq__container {
+    width: min(980px, 100%);
+    margin: 0 auto;
+}
+
+.faq__title {
+    margin: 0 0 2.1rem;
+    text-align: center;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.4rem, 6vw, 4.1rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.faq__list {
+    display: grid;
+    gap: 1rem;
+}
+
+.faq-card {
+    padding: 1.8rem 1.6rem;
+    border: 1px solid #d4d8de;
+    border-radius: 1.6rem;
+    background: #e9ebee;
+}
+
+.faq-card__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-card__head::-webkit-details-marker {
+    display: none;
+}
+
+.faq-card__head:focus-visible {
+    outline: 2px solid #7a8596;
+    outline-offset: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.faq-card h3 {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 2.2vw, 1.9rem);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.faq-card__chevron {
+    margin-top: 0.1rem;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #8a93a1;
+    line-height: 1;
+    transform: rotate(180deg);
+    transition: transform 0.2s ease;
+}
+
+.faq-card[open] .faq-card__chevron {
+    transform: rotate(0deg);
+}
+
+.faq-card__content {
+    padding-top: 0.9rem;
+}
+
+.faq-card__content p {
+    margin: 0;
+    max-width: 92%;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.04rem, 1.6vw, 1.18rem);
+    line-height: 1.6;
+    color: #556070;
+}
+
 @media (max-width: 1180px) {
     .site-header {
         flex-wrap: wrap;
@@ -468,6 +558,10 @@ button,
 
     .hero__actions {
         justify-content: center;
+    }
+
+    .faq {
+        padding-top: 4.6rem;
     }
 }
 
@@ -512,6 +606,23 @@ button,
 
     .dashboard-card__stats {
         grid-template-columns: 1fr;
+    }
+
+    .faq {
+        padding-inline: 1rem;
+    }
+
+    .faq-card {
+        padding: 1.4rem 1.1rem;
+        border-radius: 1.3rem;
+    }
+
+    .faq-card h3 {
+        font-size: clamp(1rem, 4.5vw, 1rem);
+    }
+
+    .faq-card__content p {
+        max-width: 100%;
     }
 }
 
