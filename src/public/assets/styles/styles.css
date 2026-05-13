@@ -448,126 +448,6 @@ button,
     overflow: hidden;
 }
 
-/* ── ACCESS WEB APP ── */
-
-.access_web_app {
-    margin: -5.8rem -2.2rem 5.8rem -2.2rem;
-    padding: 7rem 2.2rem;
-    background: radial-gradient(circle at 50% 50%, rgba(25, 179, 123, 0.08) 0%, #0c1219 60%);
-    background-color: #0c1219;
-    color: #f5f7f4;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid rgba(255,255,255,0.02);
-}
-
-.access_web_app__badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.4rem 1rem;
-    border-radius: 999px;
-    background: rgba(29, 181, 123, 0.1);
-    border: 1px solid rgba(29, 181, 123, 0.3);
-    color: #19b37b;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-}
-
-.access_web_app__title {
-    font-size: clamp(2.2rem, 4vw, 3.5rem);
-    font-weight: 700;
-    margin: 0 0 1.5rem 0;
-    font-family: "Zilla Slab", "Playfair Display", "Merriweather", Georgia, serif;
-    letter-spacing: -0.01em;
-    color: #ffffff;
-}
-
-.access_web_app__desc {
-    font-size: clamp(1rem, 1.5vw, 1.15rem);
-    color: #8a96a3;
-    max-width: 650px;
-    margin: 0 auto 3rem auto;
-    line-height: 1.6;
-}
-
-.access_web_app__actions {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.2rem;
-    margin-bottom: 5rem;
-    flex-wrap: wrap;
-}
-
-.access_web_app .btn--vibrant {
-    background: #1cb57a;
-    color: #ffffff;
-    font-weight: 600;
-    box-shadow: 0 4px 20px rgba(28, 181, 122, 0.3);
-    border: none;
-}
-
-.access_web_app .btn--vibrant:hover {
-    background: #18a36c;
-}
-
-.access_web_app .btn--outline {
-    background: rgba(28, 181, 122, 0.05);
-    color: #1cb57a;
-    border: 1px solid rgba(28, 181, 122, 0.4);
-    font-weight: 600;
-}
-
-.access_web_app .btn--outline:hover {
-    background: rgba(28, 181, 122, 0.12);
-}
-
-.access_web_app__play-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.4rem;
-    height: 1.4rem;
-    background: #1cb57a;
-    color: #0c1219;
-    border-radius: 50%;
-    margin-right: 0.3rem;
-}
-
-.access_web_app__play-icon svg {
-    margin-left: 2px; /* optical alignment */
-}
-
-.access_web_app__features {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: clamp(1.5rem, 4vw, 3.5rem);
-    flex-wrap: wrap;
-}
-
-.access_web_app__feature {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #5d6775;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
-.access_web_app__feature svg {
-    color: #5d6775;
-    opacity: 0.8;
-}
-
 /* ── DOWNLOAD ── */
 
 .download {
@@ -1060,6 +940,126 @@ button,
     font-size: clamp(1.04rem, 1.6vw, 1.18rem);
     line-height: 1.6;
     color: #556070;
+}
+
+/* ── ACCESS WEB APP ── */
+
+.access_web_app {
+    margin: -5.8rem -2.2rem 5.8rem -2.2rem;
+    padding: 7rem 2.2rem;
+    background: radial-gradient(circle at 50% 50%, rgba(25, 179, 123, 0.08) 0%, #0c1219 60%);
+    background-color: #0c1219;
+    color: #f5f7f4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.02);
+}
+
+.access_web_app__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    background: rgba(29, 181, 123, 0.1);
+    border: 1px solid rgba(29, 181, 123, 0.3);
+    color: #19b37b;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.access_web_app__title {
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    margin: 0 0 1.5rem 0;
+    font-family: "Zilla Slab", "Playfair Display", "Merriweather", Georgia, serif;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+}
+
+.access_web_app__desc {
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    color: #8a96a3;
+    max-width: 650px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.6;
+}
+
+.access_web_app__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+}
+
+.access_web_app .btn--vibrant {
+    background: #1cb57a;
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 4px 20px rgba(28, 181, 122, 0.3);
+    border: none;
+}
+
+.access_web_app .btn--vibrant:hover {
+    background: #18a36c;
+}
+
+.access_web_app .btn--outline {
+    background: rgba(28, 181, 122, 0.05);
+    color: #1cb57a;
+    border: 1px solid rgba(28, 181, 122, 0.4);
+    font-weight: 600;
+}
+
+.access_web_app .btn--outline:hover {
+    background: rgba(28, 181, 122, 0.12);
+}
+
+.access_web_app__play-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: #1cb57a;
+    color: #0c1219;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+}
+
+.access_web_app__play-icon svg {
+    margin-left: 2px; 
+}
+
+.access_web_app__features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(1.5rem, 4vw, 3.5rem);
+    flex-wrap: wrap;
+}
+
+.access_web_app__feature {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #5d6775;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.access_web_app__feature svg {
+    color: #5d6775;
+    opacity: 0.8;
 }
 
 /* ── RESPONSIVE ── */
