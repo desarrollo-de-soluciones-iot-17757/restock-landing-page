@@ -1227,6 +1227,237 @@ button,
     color: #556070;
 }
 
+
+/* RESTOCK BENEFITS SECTION      */
+
+.restock-benefits {
+    padding: 4.5rem 0 5rem;
+    background: #0c111d;
+    color: #eef2f7;
+    overflow: hidden;
+}
+
+.restock-benefits__inner {
+    width: min(1120px, calc(100% - 6rem));
+    margin: 0 auto;
+}
+
+.restock-benefits__header {
+    text-align: center;
+    margin-bottom: 1.7rem;
+}
+
+.restock-benefits__header h2 {
+    margin: 0;
+    color: #eef2f7;
+    font-family: "Zilla Slab", "Playfair Display", "Merriweather", Georgia, serif;
+    font-size: clamp(2.9rem, 5vw, 4.7rem);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.035em;
+}
+
+.restock-benefits__header p {
+    max-width: 760px;
+    margin: 1.1rem auto 0;
+    color: #d7dce5;
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+.restock-benefits__group {
+    margin-top: 2rem;
+}
+
+.restock-benefits__group h3 {
+    margin: 0 0 2.1rem;
+    color: #f3f6fb;
+    text-align: center;
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.restock-benefits__carousel {
+    position: relative;
+}
+
+.restock-benefits__cards {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.restock-benefits__card {
+    min-height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.75rem 1.35rem;
+    border: 1px solid rgba(226, 232, 240, 0.68);
+    border-radius: 0.35rem;
+    background: #0e1422;
+    text-align: center;
+}
+
+.restock-benefits__card--icon-top {
+    justify-content: center;
+    gap: 1.7rem;
+}
+
+.restock-benefits__card--icon-bottom {
+    justify-content: space-between;
+}
+
+.restock-benefits__card h4 {
+    max-width: 150px;
+    margin: 0 auto 1.25rem;
+    color: #e9edf5;
+    font-size: 1.05rem;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: 0.05em;
+}
+
+.restock-benefits__card p {
+    max-width: 155px;
+    margin: 0 auto;
+    color: #d7dce5;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.55;
+}
+
+.restock-benefits__icon {
+    width: 3.4rem;
+    height: 3.4rem;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    color: #10b981;
+}
+
+.restock-benefits__icon svg {
+    width: 3.1rem;
+    height: 3.1rem;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.restock-benefits__arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 3.1rem;
+    height: 3.1rem;
+    display: none;
+    place-items: center;
+    border: none;
+    border-radius: 50%;
+    background: #cbd5e1;
+    color: #111827;
+    font-size: 2.1rem;
+    line-height: 1;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.restock-benefits__arrow:hover,
+.restock-benefits__arrow:focus-visible {
+    background: #e2e8f0;
+    outline: 3px solid rgba(84, 197, 140, 0.45);
+    outline-offset: 3px;
+}
+
+.restock-benefits__arrow--left {
+    left: -4.1rem;
+}
+
+.restock-benefits__arrow--right {
+    right: -4.1rem;
+}
+
+@media (max-width: 1240px) {
+    .restock-benefits__inner {
+        width: min(100%, calc(100% - 2rem));
+    }
+
+    .restock-benefits__cards {
+        display: flex;
+        gap: 1.25rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        padding: 0 0.25rem 0.75rem;
+    }
+
+    .restock-benefits__cards::-webkit-scrollbar {
+        display: none;
+    }
+
+    .restock-benefits__card {
+        min-width: 205px;
+        scroll-snap-align: start;
+    }
+}
+
+@media (max-width: 1240px) {
+    .restock-benefits__carousel {
+        padding-inline: 2.85rem;
+    }
+
+    .restock-benefits__arrow {
+        display: grid;
+    }
+
+    .restock-benefits__arrow--left {
+        left: 0.3rem;
+    }
+
+    .restock-benefits__arrow--right {
+        right: 0.3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .restock-benefits {
+        padding: 4rem 0;
+    }
+
+    .restock-benefits__inner {
+        width: min(100%, calc(100% - 1.5rem));
+    }
+
+    .restock-benefits__header h2 {
+        font-size: 3rem;
+    }
+
+    .restock-benefits__header p {
+        font-size: 0.9rem;
+    }
+
+    .restock-benefits__group {
+        margin-top: 2.7rem;
+    }
+
+    .restock-benefits__card {
+        min-width: 220px;
+    }
+
+    .restock-benefits__arrow {
+        width: 2.7rem;
+        height: 2.7rem;
+        font-size: 1.8rem;
+    }
+}
+
+
+
 /* ═══════════════════════════════════════
    RESPONSIVE — DESKTOP
 ═══════════════════════════════════════ */
