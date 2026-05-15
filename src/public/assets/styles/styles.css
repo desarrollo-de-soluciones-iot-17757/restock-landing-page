@@ -340,6 +340,10 @@ button,
     isolation: isolate;
 }
 
+.hero-accent {
+    color: #7fe3b4;
+}
+
 .hero::before,
 .hero::after {
     content: "";
@@ -2694,3 +2698,4 @@ body.light-mode .dashboard-card {
         display: none; /* Chrome/Safari */
     }
 }
+
