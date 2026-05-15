@@ -729,7 +729,7 @@
         <div class="faq__list">
           <details class="faq-card">
             <summary class="faq-card__head">
-              <h3>How do the Smart Scales connect to the dashboard?</h3>
+              <h2>How do the Smart Scales connect to the dashboard?</h2>
               <span class="faq-card__chevron" aria-hidden="true">^</span>
             </summary>
             <div class="faq-card__content">
@@ -742,9 +742,9 @@
 
           <details class="faq-card">
             <summary class="faq-card__head">
-              <h3>
+              <h2>
                 Does it work for both restaurant kitchens and retail stores?
-              </h3>
+              </h2>
               <span class="faq-card__chevron" aria-hidden="true">^</span>
             </summary>
             <div class="faq-card__content">
@@ -758,10 +758,10 @@
 
           <details class="faq-card">
             <summary class="faq-card__head">
-              <h3>
+              <h2>
                 Can I monitor weight, temperature, and humidity
                 simultaneously?
-              </h3>
+              </h2>
               <span class="faq-card__chevron" aria-hidden="true">^</span>
             </summary>
             <div class="faq-card__content">
@@ -774,7 +774,7 @@
 
           <details class="faq-card">
             <summary class="faq-card__head">
-              <h3>What happens if the internet goes down?</h3>
+              <h2>What happens if the internet goes down?</h2>
               <span class="faq-card__chevron" aria-hidden="true">^</span>
             </summary>
             <div class="faq-card__content">
@@ -787,7 +787,7 @@
 
           <details class="faq-card">
             <summary class="faq-card__head">
-              <h3>How does the automated recipe deduction work?</h3>
+              <h2>How does the automated recipe deduction work?</h2>
               <span class="faq-card__chevron" aria-hidden="true">^</span>
             </summary>
             <div class="faq-card__content">
@@ -801,7 +801,99 @@
       </div>
     </section>
 
+    <section class="tutorial-section" id="tutorial" aria-labelledby="tutorial-heading">
+      <div class="tutorial-section__inner">
+        <h2 id="tutorial-heading" class="tutorial-section__title" data-i18n="tutorial.title">How Restock Works</h2>
+
+        <div class="tutorial-laptop" aria-hidden="true">
+          <div class="tutorial-laptop__glow"></div>
+          <div class="tutorial-laptop__lid">
+            <div class="tutorial-laptop__screen">
+              <span class="tutorial-laptop__brand">RESTOCK</span>
+              <span class="tutorial-laptop__tag" data-i18n="tutorial.screenTag">HOW RESTOCK WORKS</span>
+            </div>
+          </div>
+          <div class="tutorial-laptop__base"></div>
+        </div>
+
+        <ol class="tutorial-steps">
+          <li class="tutorial-step">
+            <span class="tutorial-step__num">1</span>
+            <h3 class="tutorial-step__title" data-i18n="tutorial.s1.title">Install the Smart Device</h3>
+            <p class="tutorial-step__desc" data-i18n="tutorial.s1.desc">Place the sensor device under shelves,
+              containers, fridges, or storage units.</p>
+          </li>
+          <li class="tutorial-step">
+            <span class="tutorial-step__num">2</span>
+            <h3 class="tutorial-step__title" data-i18n="tutorial.s2.title">Connect & Assign Inventory</h3>
+            <p class="tutorial-step__desc" data-i18n="tutorial.s2.desc">Link the device to a branch and assign the
+              product or supply you want to track.</p>
+          </li>
+          <li class="tutorial-step">
+            <span class="tutorial-step__num">3</span>
+            <h3 class="tutorial-step__title" data-i18n="tutorial.s3.title">Monitor Stock in Real Time</h3>
+            <p class="tutorial-step__desc" data-i18n="tutorial.s3.desc">Track weight, temperature, and humidity
+              automatically from your dashboard.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
     <!-- PLANS SECTION -->
+    <section class="plans-pricing" id="plans" aria-labelledby="plans-heading">
+      <div class="plans-pricing__inner">
+        <h2 id="plans-heading" class="plans-pricing__title" data-i18n="plans.title">Our Subscription Plans</h2>
+
+        <div class="plans-pricing__grid">
+          <article class="pricing-card">
+            <span class="pricing-card__badge" data-i18n="plans.basic.badge">Flexible</span>
+            <h3 class="pricing-card__name" data-i18n="plans.basic.name">Basic</h3>
+            <p class="pricing-card__desc" data-i18n="plans.basic.desc">Ideal for small operations or testing.</p>
+            <p class="pricing-card__price" data-i18n="plans.basic.price">S/ 59.99 /mo</p>
+            <ul class="pricing-card__features">
+              <li data-i18n="plans.basic.f1">Up to 10 Scales</li>
+              <li data-i18n="plans.basic.f2">Real-time Stock Alerts</li>
+              <li data-i18n="plans.basic.f3">Standard API Access</li>
+            </ul>
+            <a href="https://restock-web-application.vercel.app/sign-up/" class="btn btn--ghost pricing-card__cta"
+              data-i18n="plans.selectPlan" data-i18n-aria="aria.selectPlanBasic">Select Plan</a>
+          </article>
+
+          <article class="pricing-card pricing-card--featured">
+            <div class="pricing-card__ribbon" data-i18n="plans.premium.ribbon">Most Popular</div>
+            <span class="pricing-card__badge pricing-card__badge--solid" data-i18n="plans.premium.badge">Balanced</span>
+            <h3 class="pricing-card__name" data-i18n="plans.premium.name">Premium</h3>
+            <p class="pricing-card__desc" data-i18n="plans.premium.desc">Optimized for growing logistics teams.</p>
+            <p class="pricing-card__price pricing-card__price--accent" data-i18n="plans.premium.price">S/ 49.99 /mo</p>
+            <p class="pricing-card__billing" data-i18n="plans.premium.billing">Billed every 6 months</p>
+            <ul class="pricing-card__features">
+              <li data-i18n="plans.premium.f1">Unlimited Scales</li>
+              <li data-i18n="plans.premium.f2">Predictive Analytics</li>
+              <li data-i18n="plans.premium.f3">Priority Support 24/7</li>
+              <li data-i18n="plans.premium.f4">Advanced API Integration</li>
+            </ul>
+            <a href="https://restock-web-application.vercel.app/sign-up/"
+              class="btn btn--primary pricing-card__cta pricing-card__cta--primary" data-i18n="plans.selectPlan"
+              data-i18n-aria="aria.selectPlanPremium">Select Plan</a>
+          </article>
+
+          <article class="pricing-card">
+            <span class="pricing-card__badge" data-i18n="plans.pro.badge">Maximum Value</span>
+            <h3 class="pricing-card__name" data-i18n="plans.pro.name">Pro</h3>
+            <p class="pricing-card__desc" data-i18n="plans.pro.desc">Perfect for enterprise-grade oversight.</p>
+            <p class="pricing-card__price" data-i18n="plans.pro.price">S/ 39.99 /mo</p>
+            <p class="pricing-card__billing" data-i18n="plans.pro.billing">Billed annually</p>
+            <ul class="pricing-card__features">
+              <li data-i18n="plans.pro.f1">Everything in Semi-annual</li>
+              <li data-i18n="plans.pro.f2">Enterprise SLA Guarantee</li>
+              <li data-i18n="plans.pro.f3">Custom Integrations</li>
+            </ul>
+            <a href="https://restock-web-application.vercel.app/sign-up/" class="btn btn--ghost pricing-card__cta"
+              data-i18n="plans.selectPlan" data-i18n-aria="aria.selectPlanPro">Select Plan</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <!-- DOWNLOAD SECTION -->
     <section class="download" id="download">
