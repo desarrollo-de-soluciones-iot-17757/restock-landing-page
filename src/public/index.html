@@ -1,16 +1,68 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restock</title>
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="site-header__brand" href="#home">RESTOCK</a>
 
-      <nav class="site-header__nav" aria-label="Primary">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/styles/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="site-header__brand" href="#home">RESTOCK</a>
+
+    <nav class="site-header__nav" aria-label="Primary">
+      <a class="is-active" href="#home">HOME</a>
+      <a href="#about">ABOUT US</a>
+      <a href="#benefits">BENEFITS</a>
+      <a href="#testimonials">TESTIMONIALS</a>
+      <a href="#questions">QUESTIONS</a>
+      <a href="#tutorial">TUTORIAL</a>
+      <a href="#plans">PLANS</a>
+      <a href="#download">DOWNLOAD</a>
+    </nav>
+
+    <div class="site-header__actions">
+      <button class="site-header__theme" id="themeToggle" type="button" aria-label="Toggle color theme">
+        <span class="theme-icon">◐</span>
+      </button>
+      <button class="site-header__lang" id="siteHeaderLangToggle" type="button" data-i18n-aria="aria.langToggle"
+        aria-label="Change language">
+        <span data-i18n="nav.langIndicator">EN</span>
+      </button>
+      <a class="site-header__login" href="https://restock-web-application.vercel.app/" data-i18n="nav.login"
+        data-i18n-aria="aria.login" aria-label="Log in to Restock web application">Login</a>
+      <a class="btn btn--primary btn--compact" href="https://restock-web-application.vercel.app/sign-up/"
+        data-i18n="cta.getStarted" data-i18n-aria="aria.signUp"
+        aria-label="Create a Restock account and open the web platform">Get Started</a>
+    </div>
+
+    <button class="site-header__hamburger" type="button" aria-label="Open menu" id="hamburgerBtn">
+      <span class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__backdrop" id="menuBackdrop"></div>
+    <div class="mobile-menu__drawer">
+      <div class="mobile-menu__head">
+        <span class="mobile-menu__brand">RESTOCK</span>
+        <button class="mobile-menu__close" id="menuClose" aria-label="Close menu">
+          ✕
+        </button>
+      </div>
+
+      <nav class="mobile-menu__nav">
         <a class="is-active" href="#home">HOME</a>
         <a href="#about">ABOUT US</a>
         <a href="#benefits">BENEFITS</a>
@@ -21,143 +73,329 @@
         <a href="#download">DOWNLOAD</a>
       </nav>
 
-      <div class="site-header__actions">
-        <button
-          class="site-header__lang"
-          type="button"
-          aria-label="Change language"
-        >
-          <span aria-hidden="true">☼</span> EN <span aria-hidden="true">⌄</span>
-        </button>
-        <button class="site-header__login" type="button">Login</button>
-        <button class="btn btn--primary btn--compact" type="button">
-          Get Started
-        </button>
-      </div>
-
-      <button
-        class="site-header__hamburger"
-        type="button"
-        aria-label="Open menu"
-        id="hamburgerBtn"
-      >
-        <span class="hamburger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </button>
-    </header>
-
-    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-      <div class="mobile-menu__backdrop" id="menuBackdrop"></div>
-      <div class="mobile-menu__drawer">
-        <div class="mobile-menu__head">
-          <span class="mobile-menu__brand">RESTOCK</span>
-          <button
-            class="mobile-menu__close"
-            id="menuClose"
-            aria-label="Close menu"
-          >
-            ✕
+      <div class="mobile-menu__lang">
+        <p class="mobile-menu__lang-label">LANGUAGE</p>
+        <div class="mobile-menu__lang-options">
+          <button class="is-active" type="button" data-lang-select="en" data-i18n-aria="aria.selectEnglish"
+            aria-label="Display site in English">
+            EN
+          </button>
+          <button type="button" data-lang-select="es" data-i18n-aria="aria.selectSpanish"
+            aria-label="Mostrar el sitio en español">
+            ES
           </button>
         </div>
+      </div>
 
-        <nav class="mobile-menu__nav">
-          <a class="is-active" href="#home">HOME</a>
-          <a href="#about">ABOUT US</a>
-          <a href="#benefits">BENEFITS</a>
-          <a href="#testimonials">TESTIMONIALS</a>
-          <a href="#questions">QUESTIONS</a>
-          <a href="#tutorial">TUTORIAL</a>
-          <a href="#plans">PLANS</a>
-          <a href="#download">DOWNLOAD</a>
-        </nav>
-
-        <div class="mobile-menu__lang">
-          <p class="mobile-menu__lang-label">LANGUAGE</p>
-          <div class="mobile-menu__lang-options">
-            <button class="is-active" type="button">EN</button>
-            <button type="button">ES</button>
-          </div>
-        </div>
-
-        <div class="mobile-menu__actions">
-          <button class="mobile-menu__login" type="button">Login</button>
-          <button class="btn btn--primary" type="button">Get Started</button>
-        </div>
+      <div class="mobile-menu__actions">
+        <a class="mobile-menu__login" href="https://restock-web-application.vercel.app/" data-i18n="nav.login"
+          data-i18n-aria="aria.login" aria-label="Log in to Restock web application">Login</a>
+        <a class="btn btn--primary" href="https://restock-web-application.vercel.app/sign-up/"
+          data-i18n="cta.getStarted" data-i18n-aria="aria.signUp"
+          aria-label="Create a Restock account and open the web platform">Get Started</a>
       </div>
     </div>
+  </div>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="hero__inner">
-          <div class="hero__copy">
-            <span class="hero__eyebrow">SMART INVENTORY SYSTEM</span>
-            <h1>Smart <span>Inventory</span> for Restaurants &amp; Retail</h1>
-            <p>Real-time inventory tracking for modern businesses.</p>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <span class="hero__eyebrow">SMART INVENTORY SYSTEM</span>
+          <h1>Smart <span>Inventory</span> for Restaurants &amp; Retail</h1>
+          <p>Real-time inventory tracking for modern businesses.</p>
 
-            <div class="hero__actions">
-              <button class="btn btn--primary" type="button">
-                Get Started <span aria-hidden="true">↗</span>
-              </button>
-              <button class="btn btn--ghost" type="button">Watch Demo</button>
-            </div>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://restock-web-application.vercel.app/sign-up/"
+              data-i18n-aria="aria.signUp" aria-label="Create a Restock account and open the web platform"><span
+                data-i18n="cta.getStarted">Get Started</span>
+              <span aria-hidden="true"> ↗</span></a>
+            <button class="btn btn--ghost" type="button">
+              <span data-i18n="cta.watchDemo">Watch Demo</span>
+            </button>
           </div>
+        </div>
 
-          <div class="hero__visual" aria-hidden="true">
-            <div class="dashboard-card">
-              <div class="dashboard-card__top">
-                <div class="device-status">
-                  <span class="device-status__icon">📈</span>
-                  <div>
-                    <p>Smart Device Connected</p>
-                    <h2>Flour Supply — Downtown Branch</h2>
-                  </div>
-                </div>
-                <div class="stock-metric">
-                  <strong>2.48 kg</strong>
-                  <span>Current Stock</span>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="dashboard-card">
+            <div class="dashboard-card__top">
+              <div class="device-status">
+                <span class="device-status__icon">📈</span>
+                <div>
+                  <p>Smart Device Connected</p>
+                  <h2>Flour Supply — Downtown Branch</h2>
                 </div>
               </div>
-
-              <div class="product-frame">
-                <img
-                  class="product-frame__image"
-                  src="./assets/images/hero.png"
-                  alt="sensor of humidity and temperature"
-                />
+              <div class="stock-metric">
+                <strong>2.48 kg</strong>
+                <span>Current Stock</span>
               </div>
+            </div>
 
-              <div class="dashboard-card__stats">
-                <article>
-                  <span>TEMP</span>
-                  <strong>22.4°C</strong>
-                </article>
-                <article>
-                  <span>HUMIDITY</span>
-                  <strong>42%</strong>
-                </article>
-                <article>
-                  <span>STATUS</span>
-                  <strong>Stable</strong>
-                </article>
-              </div>
+            <div class="product-frame">
+              <img class="product-frame__image" src="./assets/images/hero.png"
+                alt="sensor of humidity and temperature" />
+            </div>
+
+            <div class="dashboard-card__stats">
+              <article>
+                <span>TEMP</span>
+                <strong>22.4°C</strong>
+              </article>
+              <article>
+                <span>HUMIDITY</span>
+                <strong>42%</strong>
+              </article>
+              <article>
+                <span>STATUS</span>
+                <strong>Stable</strong>
+              </article>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="about-page" aria-label="About Restock">
+      <div class="about-us-section" aria-labelledby="about-us-heading">
+        <div class="about-us-container">
+          <header class="about-us-section__header">
+            <h2 id="about-us-heading" data-i18n="aboutUs.title">About Us</h2>
+            <p class="about-us-section__intro" data-i18n="aboutUs.intro">
+              UI-Topic is a startup focused on improving inventory management
+              through smart real-time monitoring and digital inventory solutions.
+            </p>
+          </header>
+
+          <div class="about-us-grid" role="list">
+            <article class="about-us-card" role="listitem">
+              <div class="about-us-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="6" cy="6" r="2" stroke="currentColor" stroke-width="1.6" />
+                  <circle cx="18" cy="8" r="2" stroke="currentColor" stroke-width="1.6" />
+                  <circle cx="10" cy="18" r="2" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M7.5 7.5l8 1M8 16l8-6" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+              </div>
+              <h3 data-i18n="aboutUs.card1.title">How We Help</h3>
+              <p data-i18n="aboutUs.card1.desc">
+                We help businesses track stock levels, reduce operational losses,
+                and improve inventory control with automated monitoring tools.
+              </p>
+            </article>
+
+            <article class="about-us-card" role="listitem">
+              <div class="about-us-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 17V7M8 14V9M12 16V5M16 12V8M20 15V6" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" />
+                  <circle cx="17" cy="17" r="3.5" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M15.2 15.2L19 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3 data-i18n="aboutUs.card2.title">Value Proposition</h3>
+              <p data-i18n="aboutUs.card2.desc">
+                Restock combines real-time inventory tracking with intelligent
+                monitoring of weight, temperature, and humidity for smarter stock
+                management.
+              </p>
+            </article>
+
+            <article class="about-us-card" role="listitem">
+              <div class="about-us-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 12h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                  <circle cx="9" cy="12" r="3" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M16 8v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3 data-i18n="aboutUs.card3.title">Mission &amp; Vision</h3>
+              <p data-i18n="aboutUs.card3.desc">
+                To become a leading smart inventory solution that helps businesses
+                modernize and automate stock management through innovative
+                technology.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
 
       <!-- TEAM MEMBERS SECTION -->
+      <div class="team-section" aria-labelledby="team-heading">
+        <div class="team-section__inner">
+          <p class="team-section__eyebrow" data-i18n="team.label">Who we are</p>
+          <h2 id="team-heading" class="team-section__title">
+            <span data-i18n="team.titleBefore">Meet the </span><span class="team-section__title-accent"
+              data-i18n="team.titleAccent">Team</span><span data-i18n="team.titleAfter"> Behind Restock</span>
+          </h2>
+          <p class="team-section__lead" data-i18n="team.lead">
+            We're a team focused on simplifying inventory management for
+            restaurants and retail businesses through smarter real-time tracking.
+          </p>
 
-      <!-- ABOUT-THE-TEAM SECTION -->
+          <div class="team-laptop" aria-hidden="true">
+            <div class="team-laptop__glow"></div>
+            <div class="team-laptop__lid">
+              <div class="team-laptop__screen">
+                <span class="team-laptop__brand">RESTOCK</span>
+                <span class="team-laptop__tag" data-i18n="team.laptopTag">ABOUT THE TEAM</span>
+              </div>
+            </div>
+            <div class="team-laptop__base"></div>
+          </div>
 
-      <!-- FEATURES SECTION -->
+          <div class="team-grid">
+            <div class="team-grid__row team-grid__row--4">
+              <article class="team-member">
+                <div class="team-member__avatar">
+                  <img src="./assets/images/team/julio.png" alt="Julio Castro" />
+                </div>
+                <h3 class="team-member__name" data-i18n="team.m1.name">
+                  Julio Castro
+                </h3>
+                <p class="team-member__role" data-i18n="team.m1.role">
+                  Full Stack Developer
+                </p>
+              </article>
+              <article class="team-member">
+                <div class="team-member__avatar">
+                  <img src="./assets/images/team/farid.png" alt="Farid Coronel" />
+                </div>
+                <h3 class="team-member__name" data-i18n="team.m2.name">
+                  Farid Coronel
+                </h3>
+                <p class="team-member__role" data-i18n="team.m2.role">
+                  Frontend Developer
+                </p>
+              </article>
+              <article class="team-member">
+                <div class="team-member__avatar">
+                  <img src="./assets/images/team/matias.png" alt="Matias Diaz" />
+                </div>
+                <h3 class="team-member__name" data-i18n="team.m3.name">
+                  Matias Diaz
+                </h3>
+                <p class="team-member__role" data-i18n="team.m3.role">Hardware Engineer</p>
+              </article>
+              <article class="team-member">
+                <div class="team-member__avatar">
+                  <img src="./assets/images/team/jahaziel.png" alt="Jahaziel Guerra" />
+                </div>
+                <h3 class="team-member__name" data-i18n="team.m4.name">
+                  Jahaziel Guerra
+                </h3>
+                <p class="team-member__role" data-i18n="team.m4.role">
+                  UI/UX Designer
+                </p>
+              </article>
+            </div>
+            <div class="team-grid__row team-grid__row--3">
+              <article class="team-member">
+                <div class="team-member__avatar">
+                  <img src="./assets/images/team/nicolas.png" alt="Nicolas Juarez" />
+                </div>
+                <h3 class="team-member__name" data-i18n="team.m5.name">
+                  Nicolas Juarez
+                </h3>
+                <p class="team-member__role" data-i18n="team.m5.role">
+                  Cloud Architect
+                </p>
+              </article>
+              <article class="team-member">
+                <div class="team-member__avatar">
+                  <img src="./assets/images/team/antonio.png" alt="Antonio Navarro" />
+                </div>
+                <h3 class="team-member__name" data-i18n="team.m6.name">
+                  Antonio Navarro
+                </h3>
+                <p class="team-member__role" data-i18n="team.m6.role">
+                  Data Engineer
+                </p>
+              </article>
+              <article class="team-member">
+                <div class="team-member__avatar">
+                  <img src="./assets/images/team/gabriela.png" alt="Gabriela Shapiama" />
+                </div>
+                <h3 class="team-member__name" data-i18n="team.m7.name">
+                  Gabriela Shapiama
+                </h3>
+                <p class="team-member__role" data-i18n="team.m7.role">
+                  Hardware Engineer
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <!-- ABOUT-THE-PRODUCT SECTION -->
+      <div class="benefits-section benefits-section--why" aria-labelledby="about-why-heading">
+        <div class="benefits-container">
+          <header class="benefits-section__intro">
+            <p class="benefits-section__eyebrow" data-i18n="benefitsPlatform.label">
+              Why Restock
+            </p>
+            <h2 id="about-why-heading" class="benefits-section__title">
+              <span data-i18n="benefitsPlatform.titleLine1">One Scale.</span>
+              <span class="benefits-section__title-accent" data-i18n="benefitsPlatform.titleLine2"> Complete
+                Control.</span>
+            </h2>
+            <p class="benefits-section__subtitle" data-i18n="benefitsPlatform.subtitle">
+              Three powerful sensors. One unified dashboard. Zero guesswork.
+            </p>
+          </header>
 
-      <!-- BENEFITS SECTION -->
-      <!-- BENEFITS SECTION -->
+          <div class="benefits-grid benefits-grid--why" role="list">
+            <article class="benefits-card benefits-card--why" role="listitem">
+              <div class="benefits-card__icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 3v18M8 8l4-5 4 5M8 16l4 5 4-5" stroke="currentColor" stroke-width="1.75"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3 data-i18n="benefitsPlatform.c1.title">Smart Scale Precision</h3>
+              <p data-i18n="benefitsPlatform.c1.desc">
+                Eliminate manual counting. Our scales track every gram in
+                real-time, instantly deducting stock for restaurant recipes or
+                retail combos.
+              </p>
+            </article>
+
+            <article class="benefits-card benefits-card--why" role="listitem">
+              <div class="benefits-card__icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M14 14.7V5a2 2 0 0 0-4 0v9.7" stroke="currentColor" stroke-width="1.75"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M8 17a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z" stroke="currentColor" stroke-width="1.75" />
+                </svg>
+              </div>
+              <h3 data-i18n="benefitsPlatform.c2.title">Cold Chain Protection</h3>
+              <p data-i18n="benefitsPlatform.c2.desc">
+                Protect your perishables. Get instant alerts if refrigerators
+                fail, saving thousands in spoiled restaurant ingredients or
+                retail goods.
+              </p>
+            </article>
+
+            <article class="benefits-card benefits-card--why" role="listitem">
+              <div class="benefits-card__icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 3c-4.5 4.5-6 9-6 14a6 6 0 0 0 12 0c0-5-1.5-9.5-6-14Z" stroke="currentColor"
+                    stroke-width="1.75" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3 data-i18n="benefitsPlatform.c3.title">Ambient Quality Control</h3>
+              <p data-i18n="benefitsPlatform.c3.desc">
+                Keep dry goods perfect. Monitor humidity levels to prevent
+                retail product damage and preserve kitchen ingredient freshness.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
     <section class="restock-benefits" id="benefits" aria-labelledby="benefits-title">
       <div class="restock-benefits__inner">
         <header class="restock-benefits__header">
@@ -417,409 +655,330 @@
         </section>
       </div>
     </section>
-    
-      <!-- TESTIMONIALS SECTION -->
-      <section class="testimonials" id="testimonials">
-        <div class="testimonials__inner">
-          <h2 class="testimonials__title">
-            <span>Trusted</span> by Operations Teams
-          </h2>
 
-          <div class="testimonials__grid">
-            <article class="testimonial-card">
-              <div
-                class="testimonial-card__rating"
-                aria-label="5 out of 5 stars"
-              >
-                <span>☆</span><span>☆</span><span>☆</span><span>☆</span
-                ><span>☆</span>
-              </div>
-              <p class="testimonial-card__quote">
-                "Restock completely changed our kitchen. The smart scales alert
-                us before ingredients spoil. Our waste dropped to zero."
-              </p>
-              <div class="testimonial-card__divider" aria-hidden="true"></div>
-              <div class="testimonial-card__author">
-                <span class="testimonial-card__avatar" aria-hidden="true"
-                  >RA</span
-                >
-                <div>
-                  <h3>Rebecca Andrade</h3>
-                  <p>Restaurant Admin</p>
-                </div>
-              </div>
-            </article>
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials__inner">
+        <h2 class="testimonials__title">
+          <span>Trusted</span> by Operations Teams
+        </h2>
 
-            <article class="testimonial-card">
-              <div
-                class="testimonial-card__rating"
-                aria-label="5 out of 5 stars"
-              >
-                <span>☆</span><span>☆</span><span>☆</span><span>☆</span
-                ><span>☆</span>
+        <div class="testimonials__grid">
+          <article class="testimonial-card">
+            <div class="testimonial-card__rating" aria-label="5 out of 5 stars">
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <p class="testimonial-card__quote">
+              "Restock completely changed our kitchen. The smart scales alert
+              us before ingredients spoil. Our waste dropped to zero."
+            </p>
+            <div class="testimonial-card__divider" aria-hidden="true"></div>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__avatar" aria-hidden="true">RA</span>
+              <div>
+                <h3>Rebecca Andrade</h3>
+                <p>Restaurant Admin</p>
               </div>
-              <p class="testimonial-card__quote">
-                "Creating combos and tracking high-turnover products in
-                real-time has never been easier. The sensor integration is
-                flawless."
-              </p>
-              <div class="testimonial-card__divider" aria-hidden="true"></div>
-              <div class="testimonial-card__author">
-                <span class="testimonial-card__avatar" aria-hidden="true"
-                  >CM</span
-                >
-                <div>
-                  <h3>Carlos Medina</h3>
-                  <p>Retail Store Admin</p>
-                </div>
-              </div>
-            </article>
+            </div>
+          </article>
 
-            <article class="testimonial-card">
-              <div
-                class="testimonial-card__rating"
-                aria-label="5 out of 5 stars"
-              >
-                <span>☆</span><span>☆</span><span>☆</span><span>☆</span
-                ><span>☆</span>
+          <article class="testimonial-card">
+            <div class="testimonial-card__rating" aria-label="5 out of 5 stars">
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <p class="testimonial-card__quote">
+              "Creating combos and tracking high-turnover products in
+              real-time has never been easier. The sensor integration is
+              flawless."
+            </p>
+            <div class="testimonial-card__divider" aria-hidden="true"></div>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__avatar" aria-hidden="true">CM</span>
+              <div>
+                <h3>Carlos Medina</h3>
+                <p>Retail Store Admin</p>
               </div>
-              <p class="testimonial-card__quote">
-                "The 3-in-1 sensors replaced our daily manual audits. We now
-                have 100% visibility of our physical shelves remotely."
-              </p>
-              <div class="testimonial-card__divider" aria-hidden="true"></div>
-              <div class="testimonial-card__author">
-                <span class="testimonial-card__avatar" aria-hidden="true"
-                  >SJ</span
-                >
-                <div>
-                  <h3>Sarah Jenkins</h3>
-                  <p>Operations Manager</p>
-                </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__rating" aria-label="5 out of 5 stars">
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <p class="testimonial-card__quote">
+              "The 3-in-1 sensors replaced our daily manual audits. We now
+              have 100% visibility of our physical shelves remotely."
+            </p>
+            <div class="testimonial-card__divider" aria-hidden="true"></div>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__avatar" aria-hidden="true">SJ</span>
+              <div>
+                <h3>Sarah Jenkins</h3>
+                <p>Operations Manager</p>
               </div>
-            </article>
-          </div>
+            </div>
+          </article>
         </div>
-      </section>
-      <!-- FAQ SECTION -->
-      <section class="faq" id="questions">
-        <div class="faq__container">
-          <h2 class="faq__title">Common Questions</h2>
+      </div>
+    </section>
+    <!-- FAQ SECTION -->
+    <section class="faq" id="questions">
+      <div class="faq__container">
+        <h2 class="faq__title">Common Questions</h2>
 
-          <div class="faq__list">
-            <details class="faq-card">
-              <summary class="faq-card__head">
-                <h3>How do the Smart Scales connect to the dashboard?</h3>
-                <span class="faq-card__chevron" aria-hidden="true">^</span>
-              </summary>
-              <div class="faq-card__content">
-                <p>
-                  They connect via Wi-Fi instantly. Link them to your network
-                  using our app, and they start syncing data.
-                </p>
-              </div>
-            </details>
+        <div class="faq__list">
+          <details class="faq-card">
+            <summary class="faq-card__head">
+              <h3>How do the Smart Scales connect to the dashboard?</h3>
+              <span class="faq-card__chevron" aria-hidden="true">^</span>
+            </summary>
+            <div class="faq-card__content">
+              <p>
+                They connect via Wi-Fi instantly. Link them to your network
+                using our app, and they start syncing data.
+              </p>
+            </div>
+          </details>
 
-            <details class="faq-card">
-              <summary class="faq-card__head">
-                <h3>
-                  Does it work for both restaurant kitchens and retail stores?
-                </h3>
-                <span class="faq-card__chevron" aria-hidden="true">^</span>
-              </summary>
-              <div class="faq-card__content">
-                <p>
-                  Yes. You can configure scales to deduct ingredients based on
-                  recipes (kitchens) or track individual units for kits
-                  (retail).
-                </p>
-              </div>
-            </details>
+          <details class="faq-card">
+            <summary class="faq-card__head">
+              <h3>
+                Does it work for both restaurant kitchens and retail stores?
+              </h3>
+              <span class="faq-card__chevron" aria-hidden="true">^</span>
+            </summary>
+            <div class="faq-card__content">
+              <p>
+                Yes. You can configure scales to deduct ingredients based on
+                recipes (kitchens) or track individual units for kits
+                (retail).
+              </p>
+            </div>
+          </details>
 
-            <details class="faq-card">
-              <summary class="faq-card__head">
-                <h3>
-                  Can I monitor weight, temperature, and humidity
-                  simultaneously?
-                </h3>
-                <span class="faq-card__chevron" aria-hidden="true">^</span>
-              </summary>
-              <div class="faq-card__content">
-                <p>
-                  Absolutely. Every scale is equipped with a load cell, a
-                  thermometer, and a hygrometer.
-                </p>
-              </div>
-            </details>
+          <details class="faq-card">
+            <summary class="faq-card__head">
+              <h3>
+                Can I monitor weight, temperature, and humidity
+                simultaneously?
+              </h3>
+              <span class="faq-card__chevron" aria-hidden="true">^</span>
+            </summary>
+            <div class="faq-card__content">
+              <p>
+                Absolutely. Every scale is equipped with a load cell, a
+                thermometer, and a hygrometer.
+              </p>
+            </div>
+          </details>
 
-            <details class="faq-card">
-              <summary class="faq-card__head">
-                <h3>What happens if the internet goes down?</h3>
-                <span class="faq-card__chevron" aria-hidden="true">^</span>
-              </summary>
-              <div class="faq-card__content">
-                <p>
-                  The scales have local memory. They store sensor data and
-                  automatically sync once the connection is restored.
-                </p>
-              </div>
-            </details>
+          <details class="faq-card">
+            <summary class="faq-card__head">
+              <h3>What happens if the internet goes down?</h3>
+              <span class="faq-card__chevron" aria-hidden="true">^</span>
+            </summary>
+            <div class="faq-card__content">
+              <p>
+                The scales have local memory. They store sensor data and
+                automatically sync once the connection is restored.
+              </p>
+            </div>
+          </details>
 
-            <details class="faq-card">
-              <summary class="faq-card__head">
-                <h3>How does the automated recipe deduction work?</h3>
-                <span class="faq-card__chevron" aria-hidden="true">^</span>
-              </summary>
-              <div class="faq-card__content">
-                <p>
-                  When a dish is sold, the system calculates the expected weight
-                  drop on the scale and flags any discrepancies.
-                </p>
-              </div>
-            </details>
-          </div>
+          <details class="faq-card">
+            <summary class="faq-card__head">
+              <h3>How does the automated recipe deduction work?</h3>
+              <span class="faq-card__chevron" aria-hidden="true">^</span>
+            </summary>
+            <div class="faq-card__content">
+              <p>
+                When a dish is sold, the system calculates the expected weight
+                drop on the scale and flags any discrepancies.
+              </p>
+            </div>
+          </details>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- PLANS SECTION -->
+    <!-- PLANS SECTION -->
 
-      <!-- DOWNLOAD SECTION -->
-      <section class="download" id="download">
-        <div class="access_web_app">
-          <div class="access_web_app__badge">
-            <svg
-              viewBox="0 0 24 24"
-              width="16"
-              height="16"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <circle cx="12" cy="12" r="2"></circle>
-              <path
-                d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48 0a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"
-              ></path>
+    <!-- DOWNLOAD SECTION -->
+    <section class="download" id="download">
+      <div class="access_web_app">
+        <div class="access_web_app__badge">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="2"></circle>
+            <path
+              d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48 0a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14">
+            </path>
+          </svg>
+          SMART INVENTORY
+        </div>
+        <h2 class="access_web_app__title">
+          Ready to Simplify Your Inventory?
+        </h2>
+        <p class="access_web_app__desc">
+          Track inventory in real time, reduce waste, and prevent stock
+          shortages across your business.
+        </p>
+
+        <div class="access_web_app__actions">
+          <button class="btn btn--vibrant" type="button">
+            Get Started
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px">
+              <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
-            SMART INVENTORY
+          </button>
+          <button class="btn btn--outline" type="button">
+            <span class="access_web_app__play-icon">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" stroke="none">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </span>
+            Watch Demo
+          </button>
+        </div>
+
+        <div class="access_web_app__features">
+          <div class="access_web_app__feature">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            ENTERPRISE SECURE
           </div>
-          <h2 class="access_web_app__title">
-            Ready to Simplify Your Inventory?
-          </h2>
-          <p class="access_web_app__desc">
-            Track inventory in real time, reduce waste, and prevent stock
-            shortages across your business.
+          <div class="access_web_app__feature">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 19V10" />
+              <path d="M12 10L17 5" />
+              <circle cx="17" cy="5" r="2" />
+              <path d="M6 21h12" />
+            </svg>
+            MULTI-MONITORING
+          </div>
+          <div class="access_web_app__feature">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+            REAL-TIME TELEMETRY
+          </div>
+        </div>
+      </div>
+
+      <div class="download__inner">
+        <div class="download__copy">
+          <h2><span>Control</span> in your pocket</h2>
+          <p>
+            Our mobile app lets you monitor stock levels, receive critical
+            alerts, and generate performance reports from anywhere in the
+            world.
           </p>
 
-          <div class="access_web_app__actions">
-            <button class="btn btn--vibrant" type="button">
-              Get Started
-              <svg
-                viewBox="0 0 24 24"
-                width="18"
-                height="18"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                style="margin-left: 4px"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </button>
-            <button class="btn btn--outline" type="button">
-              <span class="access_web_app__play-icon">
-                <svg
-                  viewBox="0 0 24 24"
-                  width="12"
-                  height="12"
-                  fill="currentColor"
-                  stroke="none"
-                >
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
+          <div class="download__badges" aria-label="App store links">
+            <a class="store-badge" href="https://play.google.com/store/games?hl=es_PE&pli=1"
+              aria-label="Get it on Google Play">
+              <img src="./assets/images/google_play.png" alt="google play icon" aria-hidden="true" />
+              <span class="store-badge__text">
+                <span class="store-badge__eyebrow">GET IT ON</span>
+                <strong>Google Play</strong>
               </span>
-              Watch Demo
-            </button>
-          </div>
+            </a>
 
-          <div class="access_web_app__features">
-            <div class="access_web_app__feature">
-              <svg
-                viewBox="0 0 24 24"
-                width="18"
-                height="18"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-              ENTERPRISE SECURE
-            </div>
-            <div class="access_web_app__feature">
-              <svg
-                viewBox="0 0 24 24"
-                width="18"
-                height="18"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M12 19V10" />
-                <path d="M12 10L17 5" />
-                <circle cx="17" cy="5" r="2" />
-                <path d="M6 21h12" />
-              </svg>
-              MULTI-MONITORING
-            </div>
-            <div class="access_web_app__feature">
-              <svg
-                viewBox="0 0 24 24"
-                width="18"
-                height="18"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-              </svg>
-              REAL-TIME TELEMETRY
-            </div>
+            <a class="store-badge" href="https://www.apple.com/store" aria-label="Download on the App Store">
+              <img src="./assets/images/apple.png" alt="apple icon" aria-hidden="true" />
+              <span class="store-badge__text">
+                <span class="store-badge__eyebrow">Download on the</span>
+                <strong>App Store</strong>
+              </span>
+            </a>
           </div>
         </div>
 
-        <div class="download__inner">
-          <div class="download__copy">
-            <h2><span>Control</span> in your pocket</h2>
-            <p>
-              Our mobile app lets you monitor stock levels, receive critical
-              alerts, and generate performance reports from anywhere in the
-              world.
-            </p>
-
-            <div class="download__badges" aria-label="App store links">
-              <a
-                class="store-badge"
-                href="https://play.google.com/store/games?hl=es_PE&pli=1"
-                aria-label="Get it on Google Play"
-              >
-                <img
-                  src="./assets/images/google_play.png"
-                  alt="google play icon"
-                  aria-hidden="true"
-                />
-                <span class="store-badge__text">
-                  <span class="store-badge__eyebrow">GET IT ON</span>
-                  <strong>Google Play</strong>
-                </span>
-              </a>
-
-              <a
-                class="store-badge"
-                href="https://www.apple.com/store"
-                aria-label="Download on the App Store"
-              >
-                <img
-                  src="./assets/images/apple.png"
-                  alt="apple icon"
-                  aria-hidden="true"
-                />
-                <span class="store-badge__text">
-                  <span class="store-badge__eyebrow">Download on the</span>
-                  <strong>App Store</strong>
-                </span>
-              </a>
+        <div class="download__visual" aria-hidden="true">
+          <div class="phone-mockup">
+            <div class="phone-mockup__top">
+              <span>INVENTORY › BATCHES</span>
+              <h3>Batches</h3>
+              <button type="button" tabindex="-1">+</button>
             </div>
-          </div>
 
-          <div class="download__visual" aria-hidden="true">
-            <div class="phone-mockup">
-              <div class="phone-mockup__top">
-                <span>INVENTORY › BATCHES</span>
-                <h3>Batches</h3>
-                <button type="button" tabindex="-1">+</button>
-              </div>
+            <div class="phone-mockup__chips">
+              <span>Transfer Batch Stock</span>
+              <span>Custom Supplies</span>
+            </div>
 
-              <div class="phone-mockup__chips">
-                <span>Transfer Batch Stock</span>
-                <span>Custom Supplies</span>
-              </div>
+            <div class="phone-mockup__stats">
+              <article>
+                <span>TOTAL ACTIVE BATCHES</span>
+                <strong>142</strong>
+              </article>
+              <article>
+                <span>NEAR EXPIRY (30D)</span>
+                <strong>12 !</strong>
+              </article>
+              <article>
+                <span>SCALES HEALTH</span>
+                <strong>98% •</strong>
+              </article>
+              <article>
+                <span>INVENTORY VALUE</span>
+                <strong>S/ 42.8k</strong>
+              </article>
+            </div>
 
-              <div class="phone-mockup__stats">
-                <article>
-                  <span>TOTAL ACTIVE BATCHES</span>
-                  <strong>142</strong>
-                </article>
-                <article>
-                  <span>NEAR EXPIRY (30D)</span>
-                  <strong>12 !</strong>
-                </article>
-                <article>
-                  <span>SCALES HEALTH</span>
-                  <strong>98% •</strong>
-                </article>
-                <article>
-                  <span>INVENTORY VALUE</span>
-                  <strong>S/ 42.8k</strong>
-                </article>
-              </div>
+            <div class="phone-mockup__filters">
+              <span>All Categories</span>
+              <span>Stock Level</span>
+            </div>
 
-              <div class="phone-mockup__filters">
-                <span>All Categories</span>
-                <span>Stock Level</span>
-              </div>
-
-              <div class="phone-mockup__list">
-                <div class="phone-item phone-item--alert">
-                  <div>
-                    <strong>Coco Milk</strong>
-                    <span>Critical Supplies • ML</span>
-                    <small>Exp: 12/24/2023</small>
-                  </div>
-                  <span>›</span>
+            <div class="phone-mockup__list">
+              <div class="phone-item phone-item--alert">
+                <div>
+                  <strong>Coco Milk</strong>
+                  <span>Critical Supplies • ML</span>
+                  <small>Exp: 12/24/2023</small>
                 </div>
-                <div class="phone-item phone-item--safe">
-                  <div>
-                    <strong>Water</strong>
-                    <span>Hydration • Liters</span>
-                    <small>Exp: 08/15/2025</small>
-                  </div>
-                  <span>›</span>
-                </div>
-                <div class="phone-item phone-item--alert">
-                  <div>
-                    <strong>Bread Box</strong>
-                    <span>Endocrine • Units</span>
-                    <small>Exp: 01/10/2024</small>
-                  </div>
-                  <span>›</span>
-                </div>
+                <span>›</span>
               </div>
+              <div class="phone-item phone-item--safe">
+                <div>
+                  <strong>Water</strong>
+                  <span>Hydration • Liters</span>
+                  <small>Exp: 08/15/2025</small>
+                </div>
+                <span>›</span>
+              </div>
+              <div class="phone-item phone-item--alert">
+                <div>
+                  <strong>Bread Box</strong>
+                  <span>Endocrine • Units</span>
+                  <small>Exp: 01/10/2024</small>
+                </div>
+                <span>›</span>
+              </div>
+            </div>
 
-              <div class="phone-mockup__nav">
-                <span>Overview</span>
-                <span class="is-active">Inventory</span>
-                <span>Alerts</span>
-                <span>Devices</span>
-              </div>
+            <div class="phone-mockup__nav">
+              <span>Overview</span>
+              <span class="is-active">Inventory</span>
+              <span>Alerts</span>
+              <span>Devices</span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- FOOTER SECTION -->
-      <footer></footer>
-    </main>
-    <script src="./assets/scripts/i18n.js"></script>
-    <script src="./assets/scripts/script.js"></script>
-  </body>
+    <!-- FOOTER SECTION -->
+    <footer></footer>
+  </main>
+  <script src="./assets/scripts/i18n.js"></script>
+  <script src="./assets/scripts/script.js"></script>
+</body>
+
 </html>
