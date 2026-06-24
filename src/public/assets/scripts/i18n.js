@@ -179,49 +179,91 @@
             "aria.selectPlanPremium": "Select Premium plan and open sign up",
             "aria.selectPlanPro": "Select Pro plan and open sign up",
             "tos.title": "Terms of Service",
-            "tos.updated": "Last updated: May 14, 2026 · Restock by UI-Topic",
+            "tos.updated": "Last updated: June 2026 · Restock by UI-Topic",
             "tos.intro":
-                "These Terms of Service govern access to the Restock web platform, mobile experiences, and related documentation. By creating an account or using the services, you agree to the terms below.",
-            "tos.s1.title": "1. Eligibility and accounts",
+                "This Software as a Service (SaaS) Agreement governs your access to and use of the Restock platform. By registering or using the service, you agree to be bound by these terms.",
+            "tos.s1.title": "1. Parties of the Agreement",
             "tos.s1.body":
-                "You must have authority to bind your organization. You are responsible for safeguarding credentials, configuring roles, and promptly revoking access for former team members.",
-            "tos.s2.title": "2. Acceptable use",
+                "This agreement is entered into between UI-Topic (\"the Provider\") and the registered user (\"the Client\"), who accesses and uses the Restock platform through any of its channels: website, web application, mobile application, or associated IoT devices.",
+            "tos.s2.title": "2. Service Description",
             "tos.s2.body":
-                "Do not attempt to disrupt the platform, bypass security controls, scrape data without permission, or use Restock in violation of applicable law. We may suspend access to protect customers if misuse is detected.",
-            "tos.s3.title": "3. IoT devices and telemetry",
+                "Restock is an intelligent inventory management platform that combines software with IoT sensors to automate stock, temperature, and humidity control in restaurants and mass-consumption retail stores. The service includes access to the web application, mobile application, administration panel, and depending on the contracted plan, technical support and API integration access.",
+            "tos.s3.title": "3. Subscription Plans and Billing",
             "tos.s3.body":
-                "Hardware integrations rely on stable networks and accurate calibration. You acknowledge that environmental factors may affect readings and that you remain responsible for operational decisions on-site.",
-            "tos.s4.title": "4. Service changes",
+                "The Client must select one of the available subscription plans (Basic, Premium, or Pro) at the time of registration. Charges will be processed recurringly according to the chosen modality (monthly, semi-annual, or annual) through the Stripe payment gateway. The Provider does not store credit card data directly; such information is processed and safeguarded by Stripe according to its own security terms. The Client is responsible for keeping their payment method up to date. In the event of a renewal charge failure, the Provider will grant a grace period before restricting access to the service.",
+            "tos.s4.title": "4. Cancellation and Renewal",
             "tos.s4.body":
-                "We continuously improve Restock. We may update interfaces, endpoints, or limits with reasonable notice when materially impacting your workflows.",
-            "tos.s5.title": "5. Limitation of liability",
+                "The Client may cancel the automatic renewal of their subscription at any time from the billing section of their account. Cancellation does not generate a refund for the period already billed; access to the service will remain active until the end date of the contracted cycle. The Client may reactivate their subscription before expiration without losing their account configuration.",
+            "tos.s5.title": "5. Acceptable Use",
             "tos.s5.body":
-                "To the maximum extent permitted by law, Restock is provided “as is.” We are not liable for indirect damages, lost profits, or inventory outcomes arising from reliance on automated alerts alone.",
-            "tos.s6.title": "6. Contact",
+                "The Client agrees to use the platform exclusively for legitimate commercial and inventory management purposes. The following are expressly prohibited: attempting unauthorized access to the Provider's systems, reverse engineering the software, sharing access credentials with unauthorized third parties, using the service for illegal purposes or contrary to current regulations, and registering false or malicious data in the system.",
+            "tos.s6.title": "6. Privacy and Data Processing",
             "tos.s6.body":
-                "Questions about these terms can be directed to your account team or through the support channels listed on the website footer.",
+                "The Provider collects and processes Client data in accordance with its Privacy Policy, available on the website. Inventory, sales, device, and operational metric data are stored on secure servers with encryption in transit (TLS 1.2/1.3) and at rest. The Client retains ownership of their operational data. The Provider may use aggregated and anonymized data to improve the service, without identifying the Client or sharing information individually with third parties without explicit consent, except as required by law.",
+            "tos.s7.title": "7. IoT Devices",
+            "tos.s7.body":
+                "Clients who purchase physical Restock devices (smart scales) accept that such equipment transmits weight, temperature, and humidity data through the establishment's WiFi network to the Provider's servers. Installation, maintenance, and periodic calibration of the devices are the Client's responsibility. The Provider is not responsible for service interruptions due to failures in the establishment's network connectivity, power outages, or physical damage to hardware caused by improper use.",
+            "tos.s8.title": "8. Service Availability",
+            "tos.s8.body":
+                "The Provider will make its best efforts to maintain platform availability. Scheduled maintenance interruptions may occur, with prior notice to the Client when possible. The Provider does not guarantee uninterrupted availability and shall not be liable for damages arising from unscheduled service interruptions.",
+            "tos.s9.title": "9. Intellectual Property",
+            "tos.s9.body":
+                "All software, design, brand, trade name, logos, and content of the Restock platform are the exclusive property of UI-Topic or its licensors. This agreement does not transfer to the Client any intellectual property rights over the software. The Client receives only a limited, non-exclusive, non-transferable, and revocable license to access the service during the term of their subscription.",
+            "tos.s10.title": "10. Limitation of Liability",
+            "tos.s10.body":
+                "In no event shall the Provider be liable for indirect, incidental, special, or consequential damages arising from the use or inability to use the service, including loss of revenue, data loss, or business interruption. The Provider's maximum liability to the Client shall not exceed the total amount paid for the service in the three months prior to the event giving rise to the claim.",
+            "tos.s11.title": "11. Modifications to Service and Terms",
+            "tos.s11.body":
+                "The Provider reserves the right to modify service functionalities, available plans, and these Terms and Conditions. Modifications will be notified to the Client at least 15 days in advance by email or notice within the platform. Continued use of the service after notification implies acceptance of the new terms.",
+            "tos.s12.title": "12. Termination",
+            "tos.s12.body":
+                "The Provider may suspend or cancel the Client's access to the service without prior notice in case of violation of these terms, fraudulent use, repeated non-payment, or by requirement of competent authority. The Client may request deletion of their account and data at any time from their profile settings.",
+            "tos.s13.title": "13. Applicable Law and Dispute Resolution",
+            "tos.s13.body":
+                "This agreement is governed by the laws of the Republic of Peru. Any dispute that cannot be resolved amicably between the parties shall be submitted to the competent courts of the city of Lima.",
+            "tos.s14.title": "14. Contact",
+            "tos.s14.body":
+                "For inquiries related to these Terms and Conditions, the Client may contact the UI-Topic team through the contact form available on the official Restock website.",
             "privacy.title": "Privacy Policy",
-            "privacy.updated": "Last updated: May 14, 2026 · Restock by UI-Topic",
+            "privacy.updated": "Last updated: June 2026 · Restock by UI-Topic",
             "privacy.intro":
-                "This policy explains how Restock collects, uses, and protects data when you use our inventory platform, mobile apps, and connected devices.",
-            "privacy.s1.title": "1. Information we process",
+                "At UI-Topic, developers of the Restock platform, we are committed to protecting our users' privacy and handling their personal data with responsibility, transparency, and security. This Privacy Policy describes what information we collect, how we use it, who we share it with, and what rights users have over their data.",
+            "privacy.s1.title": "1. Data Controller",
             "privacy.s1.body":
-                "We process account details, usage logs, inventory telemetry (for example weight, temperature, and humidity readings), and support communications required to operate the service.",
-            "privacy.s2.title": "2. How we use data",
+                "The data controller for personal data collected through the Restock platform is UI-Topic, the product development team. For any inquiries regarding data processing, you may contact us through the form available on our website.",
+            "privacy.s2.title": "2. Data We Collect",
             "privacy.s2.body":
-                "Data powers dashboards, alerts, auditing, and product improvements. Aggregated analytics may be used to understand feature adoption without identifying individuals.",
-            "privacy.s3.title": "3. Sharing and subprocessors",
+                "We collect the following information when you use our platform: registration and account data (name, surname, email, encrypted password, user role, business information); business data (business name, tax ID, main address, product categories, business images); operational data (branches, inventory batches, supplies, registered IoT devices, sales, recipes, kits); IoT device data (weight, temperature, humidity readings, hardware identifiers such as MAC address); technical and usage data (IP address, device type, operating system, browser, pages visited, session time); and profile pictures stored through external media management services.",
+            "privacy.s3.title": "3. Purpose of Data Processing",
             "privacy.s3.body":
-                "We share information with infrastructure providers strictly needed to host the platform, deliver notifications, and secure backups. Contracts require confidentiality and compliance with applicable privacy regulations.",
-            "privacy.s4.title": "4. Retention and security",
+                "We use your personal data for the following purposes: to create and manage your Restock account; to enable inventory management, stock control, sales, and IoT device monitoring features; to send notifications about critical inventory events such as low stock alerts, excess stock, or detected discrepancies; to process and manage subscription payments; to improve the user experience by analyzing platform usage patterns; to comply with applicable legal obligations; and to ensure the security and integrity of the platform and prevent unauthorized access.",
+            "privacy.s4.title": "4. Legal Basis for Processing",
             "privacy.s4.body":
-                "We retain operational data according to your plan settings and legal obligations. Technical and organizational measures—including encryption in transit, access reviews, and monitoring—help protect your workspace.",
-            "privacy.s5.title": "5. Your choices",
+                "The processing of your data is based on the following legal grounds: performance of a contract (processing necessary to fulfill the terms of service you accept when registering); consent (in cases where we request your express authorization, such as for optional communications); legitimate interest (to ensure platform security and improve our services); and legal obligation (when processing is required by applicable regulations).",
+            "privacy.s5.title": "5. Data Sharing with Third Parties",
             "privacy.s5.body":
-                "Administrators may export or delete certain records subject to regulatory requirements. Users can contact their admin to exercise privacy rights available in their region.",
-            "privacy.s6.title": "6. Updates",
+                "Restock does not sell or transfer your personal data to third parties for commercial purposes. However, for the proper functioning of the platform, we share data with the following service providers under confidentiality agreements: Cloudinary (image storage and management), Stripe (secure payment processing and subscription management), Firebase Cloud Messaging (push notifications), Resend (transactional emails), MongoDB Atlas (cloud database), Microsoft Azure (backend hosting), and Vercel (web application hosting). All providers are subject to their own privacy policies and are selected based on security and reliability criteria.",
+            "privacy.s6.title": "6. International Data Transfers",
             "privacy.s6.body":
-                "When we materially change this policy, we will post the revision date here and provide notice through the product when appropriate.",
+                "Some of the aforementioned service providers operate servers located outside the user's country. In all cases, we ensure that such transfers are carried out under mechanisms that guarantee an adequate level of data protection, in accordance with applicable regulations.",
+            "privacy.s7.title": "7. Data Retention Period",
+            "privacy.s7.body":
+                "We retain your personal data for as long as you maintain an active account on the platform. Once you request deletion of your account, we will delete or anonymize your data within a reasonable period, unless there is a legal obligation requiring its retention for an additional period. Operational inventory data, historical batch records, and IoT device telemetry are retained as long as necessary for the operation of the service or as required by applicable regulations.",
+            "privacy.s8.title": "8. Data Security",
+            "privacy.s8.body":
+                "We implement appropriate technical and organizational measures to protect your data against unauthorized access, loss, alteration, or disclosure. These measures include: password encryption using secure hashing algorithms; communications protected by TLS 1.2 or higher protocols; JWT token authentication for API access; IoT device authentication via API Keys and hardware unique identifier verification; and restricted data access by internal team members under least-privilege principles.",
+            "privacy.s9.title": "9. User Rights",
+            "privacy.s9.body":
+                "In accordance with applicable data protection regulations, you have the following rights over your personal data: access (request information about what personal data we process); rectification (request correction of inaccurate or outdated data); deletion (request erasure of your data when no longer necessary); portability (receive your data in a structured, commonly used format); objection (object to the processing of your data in certain circumstances); and restriction (request restriction of processing in cases provided by law). To exercise any of these rights, you may contact us through the contact form available on the Restock website. We will respond to your request within a maximum of thirty business days.",
+            "privacy.s10.title": "10. Cookies and Similar Technologies",
+            "privacy.s10.body":
+                "Restock uses cookies and similar technologies to ensure the proper functioning of the platform, remember your session preferences, and analyze general service usage. You may manage cookie preferences from your browser settings, although disabling certain essential cookies may affect platform functionality.",
+            "privacy.s11.title": "11. Changes to This Policy",
+            "privacy.s11.body":
+                "We reserve the right to update this Privacy Policy at any time to reflect changes in our data processing practices or modifications to applicable regulations. When we make substantial changes, we will notify you through the platform or via the email address associated with your account at least seven days before the changes take effect.",
+            "privacy.s12.title": "12. Contact",
+            "privacy.s12.body":
+                "If you have questions, concerns, or wish to exercise your rights regarding the processing of your personal data, you may contact us through the available channels on the Restock website or by writing to us directly from the platform's support form.",
             "footer.tagline":
                 "Real-time inventory management for modern businesses.",
             "footer.product": "Product",
@@ -437,51 +479,93 @@
             "aria.selectPlanBasic": "Elegir plan Basic y abrir registro",
             "aria.selectPlanPremium": "Elegir plan Premium y abrir registro",
             "aria.selectPlanPro": "Elegir plan Pro y abrir registro",
-            "tos.title": "Términos de servicio",
-            "tos.updated": "Última actualización: 14 may 2026 · Restock por UI-Topic",
+            "tos.title": "Términos y Condiciones de Uso",
+            "tos.updated": "Última actualización: junio 2026 · Restock por UI-Topic",
             "tos.intro":
-                "Estos términos de servicio regulan el acceso a la plataforma web Restock, experiencias móviles y documentación relacionada. Al crear una cuenta o usar los servicios, aceptas lo siguiente.",
-            "tos.s1.title": "1. Elegibilidad y cuentas",
+                "El presente Acuerdo de Licencia de Software como Servicio (SaaS) regula su acceso y uso de la plataforma Restock. Al registrarse o utilizar el servicio, acepta quedar vinculado por estos términos.",
+            "tos.s1.title": "1. Partes del Acuerdo",
             "tos.s1.body":
-                "Debes tener facultad para obligar a tu organización. Eres responsable de proteger credenciales, configurar roles y revocar acceso con prontitud para exintegrantes.",
-            "tos.s2.title": "2. Uso aceptable",
+                "El presente acuerdo se celebra entre UI-Topic (en adelante \"el Proveedor\") y el usuario registrado (en adelante \"el Cliente\"), quien accede y utiliza la plataforma Restock a través de cualquiera de sus canales: sitio web, aplicación web, aplicación móvil o dispositivos IoT asociados.",
+            "tos.s2.title": "2. Descripción del Servicio",
             "tos.s2.body":
-                "No intentes interrumpir la plataforma, eludir controles de seguridad, extraer datos sin permiso ni usar Restock en violación de la ley aplicable. Podemos suspender el acceso para proteger a clientes si detectamos abuso.",
-            "tos.s3.title": "3. Dispositivos IoT y telemetría",
+                "Restock es una plataforma de gestión de inventarios inteligente que combina software con sensores IoT para automatizar el control de stock, temperatura y humedad en restaurantes y tiendas retail de consumo masivo. El servicio incluye acceso a la aplicación web, la aplicación móvil, el panel de administración y, según el plan contratado, soporte técnico y acceso a la API de integración.",
+            "tos.s3.title": "3. Planes de Suscripción y Facturación",
             "tos.s3.body":
-                "Las integraciones de hardware dependen de redes estables y calibración adecuada. Reconoces que factores ambientales pueden afectar las lecturas y sigues siendo responsable de las decisiones operativas en sitio.",
-            "tos.s4.title": "4. Cambios en el servicio",
+                "El Cliente deberá seleccionar uno de los planes de suscripción disponibles (Basic, Premium o Pro) al momento del registro. Los cargos se procesarán de forma recurrente según la modalidad elegida (mensual, semestral o anual) mediante la pasarela de pagos Stripe. El Proveedor no almacena datos de tarjetas de crédito directamente; dicha información es procesada y resguardada por Stripe conforme a sus propios términos de seguridad. El Cliente es responsable de mantener actualizado su método de pago. Ante un fallo en el cobro de renovación, el Proveedor otorgará un período de gracia antes de restringir el acceso al servicio.",
+            "tos.s4.title": "4. Cancelación y Renovación",
             "tos.s4.body":
-                "Mejoramos Restock de forma continua. Podemos actualizar interfaces, endpoints o límites con aviso razonable cuando impacte materialmente tus flujos.",
-            "tos.s5.title": "5. Limitación de responsabilidad",
+                "El Cliente podrá cancelar la renovación automática de su suscripción en cualquier momento desde la sección de facturación de su cuenta. La cancelación no genera reembolso del período ya facturado; el acceso al servicio se mantendrá activo hasta la fecha de vencimiento del ciclo contratado. El Cliente podrá reactivar su suscripción antes del vencimiento sin perder la configuración de su cuenta.",
+            "tos.s5.title": "5. Uso Aceptable",
             "tos.s5.body":
-                "En la máxima medida permitida por la ley, Restock se ofrece “tal cual”. No somos responsables por daños indirectos, lucro cesante ni resultados de inventario derivados únicamente de alertas automatizadas.",
-            "tos.s6.title": "6. Contacto",
+                "El Cliente se compromete a utilizar la plataforma exclusivamente para fines legítimos de gestión comercial e inventarios. Queda expresamente prohibido: intentar acceder de forma no autorizada a los sistemas del Proveedor, realizar ingeniería inversa sobre el software, compartir credenciales de acceso con terceros no autorizados, utilizar el servicio para fines ilegales o contrarios a la normativa vigente, y registrar datos falsos o maliciosos en el sistema.",
+            "tos.s6.title": "6. Privacidad y Tratamiento de Datos",
             "tos.s6.body":
-                "Las preguntas sobre estos términos pueden dirigirse a tu equipo de cuenta o a los canales de soporte indicados en el pie del sitio.",
-            "privacy.title": "Política de privacidad",
+                "El Proveedor recopila y procesa datos del Cliente conforme a su Política de Privacidad, disponible en el sitio web. Los datos de inventario, ventas, dispositivos y métricas operativas son almacenados en servidores seguros bajo cifrado en tránsito (TLS 1.2/1.3) y en reposo. El Cliente conserva la titularidad de sus datos operativos. El Proveedor podrá utilizar datos agregados y anonimizados para mejorar el servicio, sin identificar al Cliente ni compartir información de forma individual con terceros sin consentimiento explícito, salvo requerimiento legal.",
+            "tos.s7.title": "7. Dispositivos IoT",
+            "tos.s7.body":
+                "El Cliente que adquiera dispositivos físicos de Restock (balanzas inteligentes) acepta que dichos equipos transmiten datos de peso, temperatura y humedad a través de la red WiFi del establecimiento hacia los servidores del Proveedor. La instalación, mantenimiento y calibración periódica de los dispositivos son responsabilidad del Cliente. El Proveedor no se hace responsable por interrupciones del servicio derivadas de fallas en la conectividad de red del establecimiento, cortes de energía eléctrica o daños físicos al hardware ocasionados por el uso inadecuado.",
+            "tos.s8.title": "8. Disponibilidad del Servicio",
+            "tos.s8.body":
+                "El Proveedor realizará sus mejores esfuerzos para mantener la disponibilidad de la plataforma. Podrán realizarse interrupciones programadas por mantenimiento, con notificación previa al Cliente cuando sea posible. El Proveedor no garantiza disponibilidad ininterrumpida y no será responsable por daños derivados de interrupciones no programadas del servicio.",
+            "tos.s9.title": "9. Propiedad Intelectual",
+            "tos.s9.body":
+                "Todo el software, diseño, marca, nombre comercial, logotipos y contenido de la plataforma Restock son propiedad exclusiva de UI-Topic o sus licenciantes. El presente acuerdo no transfiere al Cliente ningún derecho de propiedad intelectual sobre el software. El Cliente recibe únicamente una licencia de uso limitada, no exclusiva, intransferible y revocable, para acceder al servicio durante la vigencia de su suscripción.",
+            "tos.s10.title": "10. Limitación de Responsabilidad",
+            "tos.s10.body":
+                "En ningún caso el Proveedor será responsable por daños indirectos, incidentales, especiales o consecuentes derivados del uso o la imposibilidad de uso del servicio, incluyendo pérdidas de ingresos, pérdida de datos o interrupción del negocio. La responsabilidad máxima del Proveedor ante el Cliente no excederá el monto total pagado por el servicio en los tres meses previos al evento que originó el reclamo.",
+            "tos.s11.title": "11. Modificaciones al Servicio y a los Términos",
+            "tos.s11.body":
+                "El Proveedor se reserva el derecho de modificar las funcionalidades del servicio, los planes disponibles y los presentes Términos y Condiciones. Las modificaciones serán notificadas al Cliente con al menos 15 días de anticipación mediante correo electrónico o aviso dentro de la plataforma. El uso continuado del servicio tras la notificación implica la aceptación de los nuevos términos.",
+            "tos.s12.title": "12. Terminación",
+            "tos.s12.body":
+                "El Proveedor podrá suspender o cancelar el acceso del Cliente al servicio sin previo aviso en caso de violación de los presentes términos, uso fraudulento, impago reiterado o por requerimiento de autoridad competente. El Cliente podrá solicitar la eliminación de su cuenta y datos en cualquier momento desde la configuración de su perfil.",
+            "tos.s13.title": "13. Ley Aplicable y Resolución de Controversias",
+            "tos.s13.body":
+                "El presente acuerdo se rige por las leyes de la República del Perú. Cualquier controversia que no pueda resolverse de forma amistosa entre las partes será sometida a los tribunales competentes de la ciudad de Lima.",
+            "tos.s14.title": "14. Contacto",
+            "tos.s14.body":
+                "Para consultas relacionadas con estos Términos y Condiciones, el Cliente puede comunicarse con el equipo de UI-Topic a través del formulario de contacto disponible en el sitio web oficial de Restock.",
+            "privacy.title": "Política de Privacidad",
             "privacy.updated":
-                "Última actualización: 14 may 2026 · Restock por UI-Topic",
+                "Última actualización: Junio de 2026 · Restock por UI-Topic",
             "privacy.intro":
-                "Esta política explica cómo Restock recopila, usa y protege los datos cuando utilizas la plataforma de inventario, apps móviles y dispositivos conectados.",
-            "privacy.s1.title": "1. Información que tratamos",
+                "En UI-Topic, desarrolladores de la plataforma Restock, nos comprometemos a proteger la privacidad de nuestros usuarios y a tratar sus datos personales con responsabilidad, transparencia y seguridad. Esta Política de Privacidad describe qué información recopilamos, cómo la utilizamos, con quién la compartimos y qué derechos tienen los usuarios sobre sus datos.",
+            "privacy.s1.title": "1. Responsable del tratamiento de datos",
             "privacy.s1.body":
-                "Tratamos datos de cuenta, registros de uso, telemetría de inventario (por ejemplo peso, temperatura y humedad) y comunicaciones de soporte necesarias para operar el servicio.",
-            "privacy.s2.title": "2. Cómo usamos los datos",
+                "El responsable del tratamiento de los datos personales recopilados a través de la plataforma Restock es UI-Topic, equipo desarrollador del producto. Para cualquier consulta relacionada con el tratamiento de tus datos, puedes contactarnos a través del formulario disponible en nuestro sitio web.",
+            "privacy.s2.title": "2. Datos que recopilamos",
             "privacy.s2.body":
-                "Los datos alimentan paneles, alertas, auditorías y mejoras del producto. La analítica agregada puede usarse para entender adopción de funciones sin identificar personas.",
-            "privacy.s3.title": "3. Compartición y subprocesadores",
+                "Recopilamos la siguiente información cuando utilizas nuestra plataforma: datos de registro y cuenta (nombre, apellido, correo electrónico, contraseña almacenada de forma encriptada, rol del usuario y datos del negocio registrado); datos del negocio (nombre comercial, RUC o identificador fiscal, dirección principal, categorías de productos gestionados e imágenes del negocio o sucursales); datos operativos (sucursales, lotes de inventario, suministros, dispositivos IoT registrados, ventas, recetas y kits); datos de dispositivos IoT (lecturas de peso, temperatura y humedad, identificadores únicos de hardware como la dirección MAC); datos técnicos y de uso (dirección IP, tipo de dispositivo, sistema operativo, navegador, páginas visitadas y tiempo de sesión); e imágenes de perfil almacenadas en servicios externos de gestión de medios.",
+            "privacy.s3.title": "3. Finalidad del tratamiento de datos",
             "privacy.s3.body":
-                "Compartimos información con proveedores de infraestructura estrictamente necesarios para hospedar la plataforma, enviar notificaciones y asegurar respaldos. Los contratos exigen confidencialidad y cumplimiento normativo.",
-            "privacy.s4.title": "4. Conservación y seguridad",
+                "Utilizamos tus datos personales para las siguientes finalidades: crear y gestionar tu cuenta en Restock; habilitar las funcionalidades de gestión de inventario, control de stock, ventas y monitoreo de dispositivos IoT; enviar notificaciones sobre eventos críticos del inventario como alertas de stock bajo, exceso de stock o discrepancias detectadas; procesar y gestionar el pago de suscripciones; mejorar la experiencia de usuario mediante el análisis de patrones de uso; cumplir con obligaciones legales aplicables; y garantizar la seguridad e integridad de la plataforma previniendo accesos no autorizados.",
+            "privacy.s4.title": "4. Base legal para el tratamiento",
             "privacy.s4.body":
-                "Conservamos datos operativos según la configuración de tu plan y obligaciones legales. Medidas técnicas y organizativas—incluido cifrado en tránsito, revisiones de acceso y monitoreo—ayudan a proteger tu espacio de trabajo.",
-            "privacy.s5.title": "5. Tus opciones",
+                "El tratamiento de tus datos se sustenta en las siguientes bases legales: ejecución de un contrato (el tratamiento es necesario para cumplir los términos del servicio que aceptas al registrarte); consentimiento (en casos donde solicitemos tu autorización expresa, como para comunicaciones opcionales); interés legítimo (para garantizar la seguridad de la plataforma y mejorar nuestros servicios); y obligación legal (cuando el tratamiento sea requerido por la normativa vigente).",
+            "privacy.s5.title": "5. Compartición de datos con terceros",
             "privacy.s5.body":
-                "Los administradores pueden exportar o eliminar ciertos registros sujetos a requisitos regulatorios. Los usuarios pueden contactar a su admin para ejercer derechos de privacidad disponibles en su región.",
-            "privacy.s6.title": "6. Actualizaciones",
+                "Restock no vende ni cede tus datos personales a terceros con fines comerciales. Para el correcto funcionamiento de la plataforma, compartimos datos con los siguientes proveedores bajo acuerdos de confidencialidad: Cloudinary (almacenamiento y gestión de imágenes), Stripe (procesamiento seguro de pagos), Firebase Cloud Messaging (notificaciones push), Resend (correos transaccionales), MongoDB Atlas (base de datos en la nube), Microsoft Azure (infraestructura backend) y Vercel (alojamiento de aplicaciones web). Todos nuestros proveedores están sujetos a políticas de privacidad propias y son seleccionados bajo criterios de seguridad y confiabilidad.",
+            "privacy.s6.title": "6. Transferencias internacionales de datos",
             "privacy.s6.body":
-                "Cuando cambiemos materialmente esta política, publicaremos la fecha de revisión aquí y avisaremos en el producto cuando corresponda.",
+                "Algunos de los proveedores mencionados operan en servidores ubicados fuera del país del usuario. En todos los casos, nos aseguramos de que dichas transferencias se realicen bajo mecanismos que garanticen un nivel adecuado de protección de datos, en conformidad con la normativa aplicable.",
+            "privacy.s7.title": "7. Plazo de conservación de los datos",
+            "privacy.s7.body":
+                "Conservamos tus datos personales durante el tiempo que mantengas una cuenta activa en la plataforma. Una vez que solicites la eliminación de tu cuenta, procederemos a eliminar o anonimizar tus datos en un plazo razonable, salvo que exista una obligación legal que requiera su conservación por un período adicional. Los datos operativos del inventario, registros históricos de lotes y telemetría de dispositivos IoT se conservan mientras sean necesarios para el funcionamiento del servicio o durante el tiempo que indique la normativa aplicable.",
+            "privacy.s8.title": "8. Seguridad de los datos",
+            "privacy.s8.body":
+                "Implementamos medidas técnicas y organizativas apropiadas para proteger tus datos contra accesos no autorizados, pérdida, alteración o divulgación. Entre las medidas adoptadas se incluyen: cifrado de contraseñas mediante algoritmos de hashing seguros; comunicaciones protegidas mediante protocolos TLS 1.2 o superior; autenticación mediante tokens JWT para el acceso a las APIs; autenticación de dispositivos IoT mediante API Keys y verificación de identificadores únicos de hardware; y acceso restringido a los datos por parte del equipo interno bajo principios de mínimo privilegio.",
+            "privacy.s9.title": "9. Derechos del usuario",
+            "privacy.s9.body":
+                "De acuerdo con la normativa de protección de datos aplicable, tienes los siguientes derechos sobre tus datos personales: acceso (solicitar información sobre qué datos personales tuyos tratamos); rectificación (solicitar la corrección de datos inexactos o desactualizados); eliminación (solicitar la supresión de tus datos cuando ya no sean necesarios); portabilidad (recibir tus datos en un formato estructurado y de uso común); oposición (oponerte al tratamiento de tus datos en determinadas circunstancias); y limitación (solicitar la restricción del tratamiento en casos previstos por la normativa). Para ejercer cualquiera de estos derechos, puedes contactarnos a través del formulario de contacto disponible en el sitio web de Restock. Responderemos tu solicitud en un plazo máximo de treinta días hábiles.",
+            "privacy.s10.title": "10. Cookies y tecnologías similares",
+            "privacy.s10.body":
+                "Restock utiliza cookies y tecnologías similares para garantizar el correcto funcionamiento de la plataforma, recordar tus preferencias de sesión y analizar el uso general del servicio. Puedes gestionar las preferencias de cookies desde la configuración de tu navegador, aunque la desactivación de ciertas cookies esenciales puede afectar el funcionamiento de la plataforma.",
+            "privacy.s11.title": "11. Cambios en esta política",
+            "privacy.s11.body":
+                "Nos reservamos el derecho de actualizar esta Política de Privacidad en cualquier momento para reflejar cambios en nuestras prácticas de tratamiento de datos o modificaciones en la normativa aplicable. Cuando realicemos cambios sustanciales, te notificaremos a través de la plataforma o mediante el correo electrónico asociado a tu cuenta con al menos siete días de antelación antes de que los cambios entren en vigor.",
+            "privacy.s12.title": "12. Contacto",
+            "privacy.s12.body":
+                "Si tienes preguntas, dudas o deseas ejercer tus derechos en relación con el tratamiento de tus datos personales, puedes comunicarte con nosotros a través de los canales de contacto disponibles en el sitio web de Restock o escribiéndonos directamente desde el formulario de soporte de la plataforma.",
             "footer.tagline":
                 "Gestión de inventario en tiempo real para negocios modernos.",
             "footer.product": "Producto",
