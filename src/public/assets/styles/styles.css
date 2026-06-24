@@ -2683,10 +2683,20 @@ body.light-mode .dashboard-card {
     }
 }
 
-/* Legal: visible only when opened from footer hash (#terms-of-service / #privacy-policy) */
+.tos-section:target,
+.privacy-section:target {
+    display: block;
+}
 .tos-section:not(:target),
 .privacy-section:not(:target) {
     display: none !important;
+}
+html:not(:has(:target)) .tos-section,
+html:not(:has(:target)) .privacy-section {
+    display: block !important;
+}
+.privacy-section {
+    border-top: 1px solid #dce0e5;
 }
 
 
